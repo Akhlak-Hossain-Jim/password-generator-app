@@ -14,7 +14,7 @@ export default function GenerateButton({ Char, PasswordLength, setPassword }) {
       PasswordLength > 0
     ) {
       let pas = "";
-      for (let i = 0; i < Number(PasswordLength) + 1; i++) {
+      for (let i = 1; i < Number(PasswordLength) + 1; i++) {
         pas += Char.charAt(Math.floor(Math.random() * Char.length));
       }
       setPassword(pas);
